@@ -3,40 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group>
         <item
-            android:id="@+id/home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Home" />
+            android:id="@+id/going"
+            android:icon="@drawable/ticket"
+            android:title="Going" />
         <item
             android:id="@+id/myEvents"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/medal"
             android:title="My Events" />
         <item
             android:id="@+id/allEvents"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/list"
             android:title="All Events" />
         <item
-            android:id="@+id/going"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Going" />
+            android:id="@+id/qrCode"
+            android:icon="@drawable/qr_code"
+            android:title="Qr Scan" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/home"
+            android:icon="@drawable/calendar"
+            android:title="Calendar" />
+        <item
+            android:id="@+id/geolocation"
+            android:icon="@drawable/gps"
+            android:title="Near You" />
     </group>
-
-    <item android:title="Other Features">
-        <menu>
-            <item
-                android:id="@+id/geolocation"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Near You" />
-            <item
-                android:id="@+id/qrCode"
-                android:icon="@drawable/ic_menu_send"
-                android:title="QR Code" />
-        </menu>
-    </item>
+    <group>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
 
 </menu>

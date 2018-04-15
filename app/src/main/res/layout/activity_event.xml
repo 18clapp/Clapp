@@ -6,40 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".EventActivity">
 
+    <ImageView
+        android:id="@+id/imageViewInput"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
     <TextView
         android:id="@+id/txtRegistos"
-        android:layout_width="0dp"
+        android:layout_width="225dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
-        android:text="Nº of Participants"
-        android:textColor="@color/cardview_light_background"
+        android:background="#ffffff"
+        android:gravity="left"
+        android:text="People Going"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnJoin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nearYouMap" />
+        app:layout_constraintStart_toEndOf="@+id/eventNumInput"
+        tools:layout_editor_absoluteY="216dp" />
 
     <TextView
         android:id="@+id/eventNumInput"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="9dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_weight="1"
+        android:background="@color/cardview_light_background"
         android:gravity="right"
         android:text="62"
-        android:textColor="@android:color/holo_orange_dark"
+        android:textColor="@color/colorOrange"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/eventLocationInput"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nearYouMap" />
 
@@ -47,16 +63,15 @@
         android:id="@+id/eventNameInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
         android:text="Event Name"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="#000000"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInput" />
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -177,30 +192,15 @@
 
     <Button
         android:id="@+id/btnJoin"
-        android:layout_width="332dp"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="4dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/joinbutton"
         android:onClick="joinEvent"
-        android:text="Join"
         android:textColor="@color/cardview_light_background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageViewInput"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/common_google_signin_btn_text_dark_focused"
-        app:layout_constraintBottom_toTopOf="@+id/eventNameInput"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
 
 </android.support.constraint.ConstraintLayout>
 

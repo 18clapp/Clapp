@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    tools:context="@color/colorBurger"
     tools:openDrawer="start">
 
     <include
@@ -20,6 +21,9 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_home"
+        app:itemBackground="@color/colorBurger"
+        app:itemIconTint="@color/common_google_signin_btn_text_dark_focused"
+        app:itemTextColor="@android:color/black"
         app:menu="@menu/home_drawer_activity" />
 
 </android.support.v4.widget.DrawerLayout>

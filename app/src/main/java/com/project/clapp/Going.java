@@ -119,6 +119,7 @@ public class Going extends Fragment {
 
         eventAdapter = new EventAdapter(EVENTSGoing, 1);
         rv.setAdapter(eventAdapter);
+
     }
 
 }
