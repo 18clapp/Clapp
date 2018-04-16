@@ -111,7 +111,8 @@ public class AllEvents extends Fragment {
 
     public void fillEventList(View view) {
 
-        EVENTS = EventFirebaseManager.getInstance().getEventListTagFilter(tags);
+        EVENTS = EventFirebaseManager.getInstance().getEventList();
+        System.out.println(EVENTS.size());
 
         eventAdapter = new EventAdapter(EVENTS, 1);
         rv.setAdapter(eventAdapter);
